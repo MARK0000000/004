@@ -1,0 +1,643 @@
+@import "general.scss";
+
+.header{
+   z-index: 2;
+   width: 100%;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   padding-left: 8vw;
+   padding-right: 8vw;
+   height: 80px;
+   background-color: $swc;
+   @include f (space-between, center);
+   &__content{
+      @include f (space-between, center);
+      width: 64vw;  
+      &__menu{
+         width: 20vw;
+         display: flex;
+         justify-content: space-between;
+         &__item{
+            cursor: pointer;
+            user-select: none;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+         }
+      }
+      &__social{
+         width: 10vw;
+         display: flex;
+         justify-content: space-between;
+         }
+      }
+   &__button>button{
+      background-color: $bccb;
+      color: $bcfb;
+      width: 113px;
+      height: 43px;  
+      border-radius: 2px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      }
+}
+.schedule{
+   .swiper{
+      &-wrapper{
+         height: 570px;
+   
+      }
+      &-slide__wrapper{
+         @include f (center, start);
+      }
+      &-slide_2{
+         p{
+            text-align: left;
+         }
+      }
+   }
+   margin-top: 80px;
+   height: 570px;
+   background-color: $secBackCol;
+   background-image: url("../img/home/chart.png"), url("../img/home/clouds.png");
+   background-size: 100vw 570px;
+   @include f (center, start);
+   background-repeat: no-repeat;
+   position: relative;
+   &__img {
+      position: absolute;
+      left: 30.8vw;
+      bottom: 15vh;
+      height: 92px;
+      width: 64px;
+   }
+
+   &__content {
+      margin-top: 70px;
+      @include f (space-between, center);
+      flex-direction: column;
+      width: 40vw;
+      height: 265px;
+      p{
+         width: 500px;
+      }
+      button{
+         width: 52px;
+         height: 52px;
+         border-radius: 50%;
+         background-color: $swc;
+         @include f (center, center)
+      }
+      h1{
+         text-align: center;
+         font-weight: 300;
+         font-size: 48px;
+         line-height: 60px;
+         color: $bcf;
+         span{
+            font-family: 'Quicksand';
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 60px;
+            color: $bcf;
+         }
+      }
+   }
+}
+.companys{
+   @include f (space-between, center);
+   padding-left: 280px;
+   padding-right: 280px;
+   height: 145px;
+   
+}
+.manage{
+   height: 780px;
+   @include f (center, center);
+   background-color: $secBackCol;
+   &__content{
+      display: flex;
+      justify-content: space-between;
+      height: 350px;
+      &__text{
+         @include f (space-between, left);
+         flex-direction: column;
+         height: 360px;
+         &__buttons{
+            button{
+            width: 130.08px;
+            height: 43px;
+            }
+            &__button_1{
+               background: #4C85FF;
+               box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+               color: $swc;
+            }
+            &__button_2{
+               color: #ADB4D2;
+               border: 1px solid #D1D1E4;
+            }
+         }
+         p{
+            text-align: left;
+            width: 500px;
+         }
+         h2{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 45px;
+            color: $bcf;
+            span{
+               font-family: 'Quicksand';
+               font-weight: 300;
+               font-size: 36px;
+               line-height: 45px;
+               color: $bcf;
+            } 
+         }
+      }
+   }
+}
+.about{
+   background-image:url("../img/home 4/clouds.png") ;
+   background-size: 100vw 885px;
+   height: 885px;   
+   @include f (center, center);
+   &__content{
+      @include f (space-between, center);
+      flex-direction: column;
+      height: 65vh;
+      width: 685px;
+      h3{
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 30px;
+         color: $bcf;
+      }
+      &__items{
+         width: 685px;
+         height: 255px;
+         @include f (space-between,center);
+         &__item{
+            @include f (space-between,center);
+            flex-direction: column;
+            width: 102px;
+            h4{
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 25px;
+               color: #4074F8;
+               margin-top: 15px;
+               margin-bottom: 15px;
+            }
+            p{
+               font-size: 11px;
+               line-height: 19px;
+               text-align: center;
+               color: #ADB3CB;
+               width: 102px;
+            }
+         }
+      }
+      &__buttons{
+         @include f (space-between, center);
+         width: 335px;
+         button{
+            width: 113px;
+            height: 43px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+         }
+         &__button_1{
+            color: #D43F3F;
+            background-color: #FFD7D7;
+         }
+         &__button_2{
+            color: $bcfb;
+            background-color: $bccb;
+         }
+      }
+   }
+}
+.statistics{
+   display: flex;
+   height:340px;
+   &__left{
+      padding: 5vh 5vw 5vw 0;
+      &__p{
+         text-align: right;
+         width: 260px;
+         text-align: end;
+         font-family: 'Quicksand';
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 23px;
+         letter-spacing: 0.03em;
+         color: $swc;
+      }
+      div > span{
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 83px;
+         letter-spacing: 0.03em;
+         color: $swc;
+      }
+      @include f (space-around, end);
+      flex-direction: column;
+      height: 340px;
+      width: 50vw;
+      background-color: $bc;
+   }
+   &__right{
+      padding: 5vh 0 5vw 5vw;
+      &__p{
+         width: 260px;
+         text-align: start;
+         font-family: 'Quicksand';
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 23px;
+         letter-spacing: 0.03em;
+         color: $bc;
+      }
+      div > span{
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 83px;
+         letter-spacing: 0.03em;
+         color: $bc;
+      }
+      @include f (space-around, start);
+      flex-direction: column;
+      height: 340px;
+      width: 50vw;
+      background-color: $wc;
+
+   }
+}
+.blog{
+   .popup-hidden{
+      visibility: hidden;
+      height: 0px;
+      width: 0px;
+      &__item{
+         visibility: hidden;
+      }
+   
+   }
+   .popup-hidden.__popup{
+      z-index: 3;
+      visibility: visible;
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100vh;
+      width: 100vw;
+      @include f (center, center);
+      background-color: rgba(0, 0, 0, 0.1);
+      .popup-hidden__item{
+         visibility: visible;
+         transform: scale(2, 2);
+         transition: linear 0.3s;
+      }
+   }
+   
+   .swiper{
+      &-slide__wrapper{
+         height: 600px;
+         @include f (center, center);
+      }
+   }
+   padding-left: 9vw;
+   padding-right: 9vw;
+   height: 745px;
+   background: $secBackCol;
+   &__sector_text{
+      @include f (space-around, center);
+      flex-direction: column;
+      height: 150px;
+      padding-top: 60px;
+      margin-bottom: -50px;
+      h3{
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 30px;
+         text-align: center;
+         color: #3D4F9F;
+      }
+   }
+   
+   &__content{
+      @include f (space-around, center);
+      width: 985px;
+      height: 400px;
+      background-color: $swc;
+      &__imges{
+         display: grid;
+         width: 406px;
+         height: 267px;
+         grid-template-columns: 271px 129px;
+         grid-template-rows: 271px;
+         gap: 12px;
+         &__flex{
+            @include f (space-between,center);
+            flex-direction: column
+         }
+         &__glass{
+            position: relative;
+            &__item{
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               z-index: 2;
+
+            }
+         }
+        
+      }
+      &__text{
+         @include f (space-between, start);
+         flex-direction: column;
+         height: 270px;
+         width: 408px;
+         margin-left: -100px;
+         h4{
+            font-family: 'Quicksand';
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 45px;
+            color: #3D4F9F;
+            width: 408px;
+   
+         }
+         p{
+            width: 408px;
+            text-align: left;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            color: #8D96BD;
+   
+         }
+         &__buttons{
+            a{
+               margin-left: 25px;
+               font-weight: 700;
+               font-size: 13px;
+               line-height: 16px;
+               text-align: center;
+               color: #A6B6DA;
+            }
+            button{
+               width: 113px;
+               height: 43px;
+               background: #D2E1FF;
+               border-radius: 2px;
+               font-weight: 700;
+               font-size: 13px;
+               line-height: 16px;
+               text-align: center;
+               color: $bcfb;
+   
+            }
+   
+         }
+      }
+   }
+}
+.quotes{
+   &__wrapper{
+      width: 100%;
+      height: 275px;
+      min-width: 0;
+      @include f (space-between, center);
+   }
+   &__wrapper_2{
+      width: 705px;
+   }
+   .swiper{
+      &-wrapper{
+         height: 250px;
+      }
+   }
+   position: relative;
+   p{
+      text-align: left;
+   }
+   height: 479px;
+   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+   min-width: 0;
+   @include f (center,center);
+   &__text{
+      margin-left: 270px;
+      height: 175px;
+      width: 325px;
+      @include f (space-around,start);
+      flex-direction: column;
+      span{
+         font-family: 'Roboto';
+         font-weight: 500;
+         font-size: 10px;
+         line-height: 12px;
+         letter-spacing: 0.1em;
+         text-transform: uppercase;
+         color: #3D4F9F;
+
+      }
+      h3{
+         font-weight: 500;
+         font-size: 36px;
+         line-height: 45px;
+         color: #3D4F9F;
+         width: 400px;
+      }
+      p{
+         width: 300px;
+         font-size: 12px;
+         line-height: 23px;
+         letter-spacing: 0.03em;
+         color: #A4ABC8;
+      }
+   }
+   &__com{
+      margin: 0 auto;
+      padding: 30px 60px 30px 60px;
+      height: 175px;
+      width: 425px;
+      background-color: $swc;
+      position: relative;
+      img{
+         position: absolute;
+         left: 50%;
+         top: 100%;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+.questions{
+   summary{
+      list-style: none;
+   }
+   summary:before{
+      content: url("../img/general/arrow\ bottom.svg");
+      padding-right: 24px;
+   }
+   details[open] summary:before{
+      content: url("../img/general/arrow\ top.svg");
+   }
+   details[open] summary{
+      color: #495274;
+      font-weight: 700
+   }
+   @include f (center, center);
+   height: 960px;
+   div{
+      @include f (space-between, center);
+      flex-direction: column;
+      height: 615px;
+   }
+   span{
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #3D4F9F;
+      
+   }
+   h2{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      color: #3D4F9F;
+      
+   }
+   details{
+      border-top: solid 1px #D8E3FE;
+      border-bottom: solid 1px #D8E3FE;
+      width: 740px;
+      summary{
+         font-size: 15px;
+         line-height: 77px;
+         letter-spacing: 0.03em;
+         color: #8E96B7;
+         
+      }
+      p{
+         padding: 0px 0px 30px 20px;
+         text-align: left;
+      }
+   }
+}
+.getStarted{
+   @include f (space-between,center);
+   flex-direction: column;
+   padding-bottom: 100px;
+   padding-top: 100px;
+   height: 447px;
+   background-color: #5E80FF;
+   background-image: url("../img/general/clouds.png");
+   background-size: 100vw 447px;
+   span{
+      color: $swc;
+   }
+   h2{
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 60px;
+      color: $swc;
+      span{
+         font-weight: 500;    
+         font-size: 48px;
+         line-height: 60px;  
+      }
+   }
+   p{
+      color: $swc;
+      width: 700px;
+   }
+   &__buttons{
+      display: flex;
+      &__button{
+         width: 130.08px;
+         height: 43px;
+         
+      }
+      &__button_1{
+         background: $swc;
+         box-shadow: 0px 5px 15px #6480E8;
+         
+      }
+      &__button_2{
+         background-color: rgba(0, 0, 0, 0);
+         border: 1px solid #A0B4FF;
+         color: #C7D3FF;
+         width: 150px;
+      }
+   }
+}
+.email{
+   height: 332px;
+   padding: 120px 18vw 120px 18vw;
+   @include f (space-between, center);
+   &__text{
+      @include f (space-between, start);
+      flex-direction: column;
+      height: 95px;
+      h3{
+         text-align: left;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 22px;
+         color: #3D4F9F;
+      }
+      p{
+         text-align: left;
+         width: 330px;
+      }
+   }
+   &__input{
+      form{
+         display: flex;
+         input{
+            width: 279px;
+            height: 59px;
+            background: #EFEFF7;
+            border-radius: 5px;
+            padding-left: 25px;
+         }
+         button{
+            width: 184px;
+            height: 59px;
+            background: #4D6CE1;
+            box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+            border-radius: 5px;
+            margin-left: 15px;
+            color: $swc;
+         }
+      }
+   }
+}
+footer.header{
+   position: relative;
+   height: 276px;
+   div.footer{
+      position: absolute;
+      left: 16vw;
+      bottom: 80px;
+      p{
+         letter-spacing: 0.05em;
+         text-transform: capitalize;
+         color: #AEB8D0;
+      }
+   }
+}
+
+
